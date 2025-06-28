@@ -2,14 +2,14 @@ import Image from "next/image"
 
 export default function PillarsSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-6 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-stone-900 mb-4">
-            The 5 Pillars Of <span className="text-cyan-400">Asia Health-5 2025</span>
+            The 5 Pillars Of <span className="text-[#3EAEC2]">Asia Health-5 2025</span>
           </h2>
           <p className="text-gray-600 max-w-4xl mx-auto text-sm leading-relaxed">
-            Health-5 2025 Is A Sector-Focused Platform That Unites Five High-Growth Verticals Of The Healthcare And
+           <span className="text-[#3EAEC2]"> Health-5</span> 2025 Is A Sector-Focused Platform That Unites Five High-Growth Verticals Of The Healthcare And
             Wellness Industry. Each Pillar Represents A Thriving Market Opportunity And Is Curated To Showcase
             Innovation, Investment Potential, And Business-Ready Solutions.
           </p>
@@ -17,7 +17,7 @@ export default function PillarsSection() {
 
         <div className="space-y-8">
           {/* Pillar 1 - Medical Supplies */}
-          <div className="bg-cyan-400 rounded-lg overflow-hidden">
+          <div className="bg-[#19F0F5] rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-2">
               <div className="p-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-stone-900 mb-4">1. Medical Supplies</h3>
@@ -27,16 +27,17 @@ export default function PillarsSection() {
                   Quality Products That Meet Global Standards.
                 </p>
               </div>
-              <div className="relative min-h-[250px]">
-                <Image src="/pillar/pillar1.png" alt="Medical Supplies" fill className="object-cover" />
-              </div>
+<div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
+  <Image src="/pillar/pillar1.png" alt="Medical Supplies" fill className="object-cover" />
+</div>
+
             </div>
           </div>
 
           {/* Pillar 2 - Laboratory Equipment */}
-          <div className="bg-gray-800 rounded-lg overflow-hidden">
+          <div className="bg-[#0D9B9D] rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-2">
-              <div className="relative min-h-[250px]">
+              <div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
                 <Image src="/pillar/pillar2.png" alt="Laboratory Equipment" fill className="object-cover" />
               </div>
               <div className="p-8 flex flex-col justify-center">
@@ -51,7 +52,7 @@ export default function PillarsSection() {
           </div>
 
           {/* Pillar 3 - Medical Tourism */}
-          <div className="bg-cyan-400 rounded-lg overflow-hidden">
+          <div className="bg-[#19F0F5] rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-2">
               <div className="p-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-stone-900 mb-4">3. Medical Tourism</h3>
@@ -61,16 +62,16 @@ export default function PillarsSection() {
                   And Health Tour Operators.
                 </p>
               </div>
-              <div className="relative min-h-[250px]">
+              <div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
                 <Image src="/pillar/pillar3.png" alt="Medical Tourism" fill className="object-cover" />
               </div>
             </div>
           </div>
 
           {/* Pillar 4 - Digital Health */}
-          <div className="bg-gray-800 rounded-lg overflow-hidden">
+          <div className="bg-[#0D9B9D] rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-2">
-              <div className="relative min-h-[250px]">
+              <div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
                 <Image src="/pillar/pillar4.png" alt="Digital Health" fill className="object-cover" />
               </div>
               <div className="p-8 flex flex-col justify-center">
@@ -85,7 +86,7 @@ export default function PillarsSection() {
           </div>
 
           {/* Pillar 5 - Elderly Care */}
-          <div className="bg-cyan-400 rounded-lg overflow-hidden">
+          <div className="bg-[#19F0F5] rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-2">
               <div className="p-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-stone-900 mb-4">5. Elderly Care</h3>
@@ -96,7 +97,7 @@ export default function PillarsSection() {
                   Wellness Investors.
                 </p>
               </div>
-              <div className="relative min-h-[250px]">
+              <div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
                 <Image src="/pillar/pillar5.png" alt="Elderly Care" fill className="object-cover" />
               </div>
             </div>

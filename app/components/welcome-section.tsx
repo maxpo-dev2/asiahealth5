@@ -3,7 +3,7 @@ import { CircleArrowRight } from "lucide-react";
 
 export default function WelcomeSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-6 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Left Content */}

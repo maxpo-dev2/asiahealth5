@@ -1,26 +1,36 @@
+"use client";
 import Image from "next/image";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { X, Instagram, Linkedin,Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="bg-gray-900 text-white pt-12">
       <div className="container mx-auto px-4">
+        {/* Top Section */}
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo and Contact */}
           <div className="lg:col-span-1">
             <div className="mb-4">
               <Image
-                src="/logo/healthlogo.png" // Ensure this path is correct and file is in public/logo/
+                src="/logo/healthlogow.png"
                 alt="Asia Health 5 Logo"
                 width={160}
                 height={80}
                 className="object-contain"
               />
             </div>
-            <div className="text-sm text-gray-300 mb-4">WTC, Kuala Lumpur, Malaysia</div>
-            <div className="text-sm text-gray-300 mb-2">Contact Us</div>
-            <div className="text-sm text-gray-300 mb-1">info@asiahealth5.com</div>
-            <div className="text-sm text-gray-300">+91 9363106848 | +91 9361705548</div>
+            <div className="text-sm text-gray-300 mb-4">
+              WTC, Kuala Lumpur, Malaysia
+            </div>
+            <div className="text-sm text-gray-300 mb-2 font-semibold">
+              Contact Us
+            </div>
+            <div className="text-sm text-gray-300 mb-1">
+              info@asiahealth5.com
+            </div>
+            <div className="text-sm text-gray-300">
+              +91 9363106848 | +91 9361705548
+            </div>
           </div>
 
           {/* Event Information */}
@@ -67,23 +77,52 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="text-sm text-gray-300 mb-4 md:mb-0">
-              <span className="mr-4">Follow Us</span>
-              <div className="inline-flex space-x-2">
-                <Facebook className="w-5 h-5 text-gray-400 hover:text-cyan-400 cursor-pointer" />
-                <Twitter className="w-5 h-5 text-gray-400 hover:text-cyan-400 cursor-pointer" />
-                <Linkedin className="w-5 h-5 text-gray-400 hover:text-cyan-400 cursor-pointer" />
-                <Instagram className="w-5 h-5 text-gray-400 hover:text-cyan-400 cursor-pointer" />
+        <div className="mt-12 pt-8 border-t border-gray-700">
+          <div className="grid md:grid-cols-3 gap-4 items-start text-sm text-gray-300">
+            {/* Contact Info */}
+            <div>
+              <div className="font-semibold mb-1">Contact Us</div>
+              <div>info@asiahealth5.com</div>
+              <div>+971 509431529 | +91 9363106848</div>
+            </div>
+
+            {/* Organised By */}
+            <div className="text-center">
+              <div className="text-sm mb-2">Organised By</div>
+              <Image
+                src="/logo/gmec.png"
+                alt="GMEC India Logo"
+                width={100}
+                height={40}
+                className="mx-auto object-contain"
+              />
+            </div>
+
+            {/* Social Media */}
+            <div className="text-right">
+              <div className="font-semibold mb-1">Follow Us:</div>
+              <div className="flex justify-end space-x-3">
+                <a href="#" aria-label="X">
+                  <X className="w-5 h-5 text-gray-400 hover:text-cyan-400 transition" />
+                </a>
+                <a href="#" aria-label="Instagram">
+                  <Instagram className="w-5 h-5 text-gray-400 hover:text-cyan-400 transition" />
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                  <Linkedin className="w-5 h-5 text-gray-400 hover:text-cyan-400 transition" />
+                </a>
+      <a href="#" aria-label="Facebook">
+        <Facebook className="w-5 h-5 text-gray-400 hover:text-cyan-400 transition" />
+      </a>
               </div>
             </div>
-            <div className="flex items-center space-x-4">
-              <span className="text-sm text-gray-300">Organised by</span>
-              <div className="bg-cyan-400 px-3 py-1 rounded text-black font-bold text-sm">GMEC INDIA</div>
-            </div>
           </div>
-          <div className="text-center mt-4 text-xs text-gray-400">
+
+          {/* Gradient Line */}
+          <div className="h-1 w-full bg-gradient-to-r from-cyan-400 to-transparent mt-6 mb-4" />
+
+          {/* Footer Bottom */}
+          <div className="text-center text-xs text-gray-400 pb-4">
             <a href="#" className="hover:text-cyan-400 mr-4">Terms & Conditions</a>
             <a href="#" className="hover:text-cyan-400">Privacy Policy</a>
           </div>

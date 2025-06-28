@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function SpeakersSection() {
   return (
-    <section className="py-16 bg-gray-800">
+    <section className="py-6 md:py-16 bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between mb-12">
           <h2 className="text-4xl font-bold text-white">
