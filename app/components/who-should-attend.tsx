@@ -5,8 +5,8 @@ export default function WhoShouldAttend() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-2">Who Should</h2>
-          <h2 className="text-4xl font-bold text-cyan-400">Attend?</h2>
+          <h2 className="text-4xl font-bold text-[#1E1E1E] mb-2">Who Should</h2>
+          <h2 className="text-8xl font-bold text-[#3EAEC2]">Attend?</h2>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
