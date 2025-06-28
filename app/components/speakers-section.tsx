@@ -38,7 +38,7 @@ export default function SpeakersSection() {
               className="w-full"
             />
             <div className="p-4 bg-cyan-400">
-              <div className="font-bold text-gray-800">Name</div>
+              <div className="font-bold text-stone-900">Name</div>
               <div className="text-gray-700">Post</div>
               <div className="mt-2">
                 <div className="bg-white p-2 rounded text-xs font-bold text-center">BUSINESS</div>
@@ -54,7 +54,7 @@ export default function SpeakersSection() {
               className="w-full"
             />
             <div className="p-4 bg-cyan-400">
-              <div className="font-bold text-gray-800">Name</div>
+              <div className="font-bold text-stone-900">Name</div>
               <div className="text-gray-700">Post</div>
               <div className="mt-2">
                 <div className="bg-white p-2 rounded text-xs font-bold text-center">BUSINESS</div>
@@ -70,7 +70,7 @@ export default function SpeakersSection() {
               className="w-full"
             />
             <div className="p-4 bg-cyan-400">
-              <div className="font-bold text-gray-800">Name</div>
+              <div className="font-bold text-stone-900">Name</div>
               <div className="text-gray-700">Post</div>
               <div className="mt-2">
                 <div className="bg-white p-2 rounded text-xs font-bold text-center">FLYSETS</div>
