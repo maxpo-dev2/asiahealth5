@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function FeaturesSection() {
   return (
-    <section className="py-16 bg-gray-900">
+    <section className="py-6 md:py-16 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-gray-900 rounded-lg overflow-hidden relative h-64">

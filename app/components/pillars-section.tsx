@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function PillarsSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-6 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-stone-900 mb-4">
@@ -13,7 +13,7 @@ export default function PillarsSection() {
             Wellness Industry. Each Pillar Represents A Thriving Market Opportunity And Is Curated To Showcase
             Innovation, Investment Potential, And Business-Ready Solutions.
           </p>
-        </div>ḷ
+        </div>
 
         <div className="space-y-8">
           {/* Pillar 1 - Medical Supplies */}

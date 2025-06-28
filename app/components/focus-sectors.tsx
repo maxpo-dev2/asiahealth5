@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FocusSectors() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-6 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl  text-center text-stone-900 mb-12">
@@ -29,7 +29,7 @@ export default function FocusSectors() {
 
 function Card({ src, label }: { src: string; label: string }) {
   return (
-    <div className="relative h-120 rounded-4xl overflow-hidden ">
+    <div className="relative h-60 md:h-120 rounded-4xl overflow-hidden ">
       <Image
         src={src}
         alt={label}

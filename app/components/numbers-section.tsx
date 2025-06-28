@@ -1,6 +1,6 @@
 export default function NumbersSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-6 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl text-stone-900 mb-8 font-medium">
