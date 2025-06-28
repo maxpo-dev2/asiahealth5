@@ -1,59 +1,48 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export default function FocusSectors() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-          Focus Sectors At <span className="text-cyan-400">Asia Health-5 2025</span>
+        {/* Section Heading */}
+        <h2 className="text-3xl md:text-4xl  text-center text-stone-900 mb-12">
+          Focus Sectors At{" "}
+          <span className="text-cyan-500 font-bold">Asia Health–5 2025</span>
         </h2>
 
-        {/* First row - 2 large cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
-          <div className="relative h-80 rounded-3xl overflow-hidden group">
-            <Image src="/focus/foc1.png" alt="Medical Supplies" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/80 via-cyan-400/60 to-cyan-300/40" />
-            <div className="absolute bottom-8 left-0 right-0 text-center">
-              <h3 className="text-2xl font-bold text-white">Medical Supplies</h3>
-            </div>
-          </div>
-
-          <div className="relative h-80 rounded-3xl overflow-hidden group">
-            <Image src="/focus/foc2.png" alt="Laboratory Equipment" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/80 via-cyan-400/60 to-cyan-300/40" />
-            <div className="absolute bottom-8 left-0 right-0 text-center">
-              <h3 className="text-2xl font-bold text-white">Laboratory Equipment</h3>
-            </div>
-          </div>
+        {/* Top Row - 2 Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-15 ">
+          <Card src="/focus/foc1.png" label="Medical Supplies" />
+          <Card src="/focus/foc2.png" label="Laboratory Equipment" />
         </div>
 
-        {/* Second row - 3 smaller cards */}
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="relative h-64 rounded-3xl overflow-hidden group">
-            <Image src="/focus/foc3.png" alt="Medical Tourism" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/80 via-cyan-400/60 to-cyan-300/40" />
-            <div className="absolute bottom-6 left-0 right-0 text-center">
-              <h3 className="text-xl font-bold text-white">Medical Tourism</h3>
-            </div>
-          </div>
-
-          <div className="relative h-64 rounded-3xl overflow-hidden group">
-            <Image src="/focus/foc4.png" alt="Digital Health" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/80 via-cyan-400/60 to-cyan-300/40" />
-            <div className="absolute bottom-6 left-0 right-0 text-center">
-              <h3 className="text-xl font-bold text-white">Digital Health</h3>
-            </div>
-          </div>
-
-          <div className="relative h-64 rounded-3xl overflow-hidden group">
-            <Image src="/focus/foc5.png" alt="Elderly Care" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/80 via-cyan-400/60 to-cyan-300/40" />
-            <div className="absolute bottom-6 left-0 right-0 text-center">
-              <h3 className="text-xl font-bold text-white">Elderly Care</h3>
-            </div>
-          </div>
+        {/* Bottom Row - 3 Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <Card src="/focus/foc3.png" label="Medical Tourism" />
+          <Card src="/focus/foc4.png" label="Digital Health" />
+          <Card src="/focus/foc5.png" label="Elderly Care" />
         </div>
       </div>
     </section>
-  )
+  );
+}
+
+function Card({ src, label }: { src: string; label: string }) {
+  return (
+    <div className="relative h-120 rounded-4xl overflow-hidden ">
+      <Image
+        src={src}
+        alt={label}
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(62,174,194,0)_19.36%,_#3EAEC2_100%)]" />
+      <div className="absolute bottom-7 left-0 right-0 text-center">
+        <h3 className="text-base sm:text-lg md:text-2xl font-semibold text-white">
+          {label}
+        </h3>
+      </div>
+    </div>
+  );
 }

@@ -5,7 +5,7 @@ export default function PillarsSection() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl font-bold text-stone-900 mb-4">
             The 5 Pillars Of <span className="text-cyan-400">Asia Health-5 2025</span>
           </h2>
           <p className="text-gray-600 max-w-4xl mx-auto text-sm leading-relaxed">
@@ -20,8 +20,8 @@ export default function PillarsSection() {
           <div className="bg-cyan-400 rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-2">
               <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">1. Medical Supplies</h3>
-                <p className="text-gray-800 text-sm leading-relaxed">
+                <h3 className="text-2xl font-bold text-stone-900 mb-4">1. Medical Supplies</h3>
+                <p className="text-stone-900 text-sm leading-relaxed">
                   Find The Latest In Surgical Instruments, Diagnostic Tools, Disposables, And Hospital-Grade Medical
                   Consumables. The Segment Brings Together Leading Manufacturers And Procurement Professionals Seeking
                   Quality Products That Meet Global Standards.
@@ -54,8 +54,8 @@ export default function PillarsSection() {
           <div className="bg-cyan-400 rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-2">
               <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">3. Medical Tourism</h3>
-                <p className="text-gray-800 text-sm leading-relaxed">
+                <h3 className="text-2xl font-bold text-stone-900 mb-4">3. Medical Tourism</h3>
+                <p className="text-stone-900 text-sm leading-relaxed">
                   A Dedicated Platform For Hospitals, Wellness Resorts, And Facilitators To Promote Cross-Border
                   Healthcare Services. Position Your Brand In Front Of International Patients, Medical Travel Agencies,
                   And Health Tour Operators.
@@ -88,8 +88,8 @@ export default function PillarsSection() {
           <div className="bg-cyan-400 rounded-lg overflow-hidden">
             <div className="grid lg:grid-cols-2">
               <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">5. Elderly Care</h3>
-                <p className="text-gray-800 text-sm leading-relaxed">
+                <h3 className="text-2xl font-bold text-stone-900 mb-4">5. Elderly Care</h3>
+                <p className="text-stone-900 text-sm leading-relaxed">
                   Addressing An Aging Population, This Wellness And Elderly Care Healthcare Segment Focuses On Senior
                   Care Infrastructure. This Segment Features Assisted Living Products, Mobility Aids, Nursing
                   Technologies, And Care Home Management Solutions Essential For Caregivers, Policy Planners, And
