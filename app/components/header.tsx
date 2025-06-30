@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const navBarContents = [
   { title: "Home", link: "/" },
-  { title: "About Us", link: "/about-us" },
+  { title: "About Us", link: "/about" },
   {
     title: "Exhibition",
     link: "/exhibition",
