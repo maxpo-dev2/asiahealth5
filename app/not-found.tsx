@@ -11,7 +11,7 @@ export default function NotFound(): JSX.Element {
         <h1 className="text-8xl font-extrabold text-white tracking-tight">404</h1>
         <p className="mt-4 text-2xl font-semibold text-cyan-300">Page Not Found</p>
         <p className="mt-2 text-gray-300 text-sm">
-          The page you're looking for doesn't exist or might have been moved.
+          The page you&apos;re looking for doesn&apos;t exist or might have been moved.
         </p>
         <Link
           href="/"
