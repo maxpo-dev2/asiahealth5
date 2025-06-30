@@ -8,9 +8,9 @@ module.exports = {
       red: colors.rose,
       pink: colors.fuchsia,
     },
-fontFamily: {
-  sans: ['var(--font-dm-sans)', 'sans-serif'],
-},
+ fontFamily: {
+        sans: ['var(--font-dm-sans)', 'sans-serif'],
+      },
     extend: {
       spacing: {
         "128": "32rem",
