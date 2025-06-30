@@ -32,7 +32,7 @@ export default function FeaturesSection() {
           {features.map((item, index) => (
             <div
               key={index}
-              className="rounded-lg overflow-hidden relative h-80 group"
+              className=" overflow-hidden relative h-80 group"
             >
               <div
                 className={`absolute inset-0 overflow-hidden ${item.rounded}`}
