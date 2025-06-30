@@ -14,6 +14,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Health5 Asia - 2025",
   description: "biggest health expo in asia",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/logo/favicon-32x32.png",
+    apple: "/logo/apple-touch-icon.png",
+}
 };
 
 export default function RootLayout({
