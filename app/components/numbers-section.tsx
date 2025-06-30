@@ -12,13 +12,13 @@ export default function NumbersSection() {
         <div className="bg-[linear-gradient(90deg,_rgb(161,253,255)_0%,_rgba(62,174,194,0)_100%)] px-6 md:px-20 py-12 rounded-none mb-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
             {[
-              { value: "3000+", label: "Visitors" },
-              { value: "250+", label: "Exhibitors" },
-              { value: "25+", label: "Speakers" },
+              { value: "3000", label: "Visitors" },
+              { value: "250", label: "Exhibitors" },
+              { value: "25", label: "Speakers" },
             ].map((item, index) => (
               <div key={index}>
-                <div className="text-6xl md:text-8xl font-bold text-stone-900 mb-2">
-                  {item.value}
+                <div className="text-6xl md:text-8xl font-semibold text-stone-900 mb-2">
+                  {item.value}<span className="text-6xl">+</span>
                 </div>
                 <div className="text-cyan-500 text-xl md:text-3xl font-medium">
                   {item.label}
