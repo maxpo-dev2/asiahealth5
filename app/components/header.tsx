@@ -53,7 +53,7 @@ export default function Header() {
   };
 
   return (
-    <header className="relative bg-neutral-900 shadow-md  z-50 overflow-visible ">
+    <header className="sticky top-0 bg-neutral-900 shadow-md  z-50 overflow-visible  ">
       {/* Overlapping Logo */}
       <div className="absolute top-0 left-0 md:left-40 z-50 h-full w-1/3 md:w-auto">
         <div className="bg-white w-" style={{ borderRadius: "50px 0px 50px 0px" }}>

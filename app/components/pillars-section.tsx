@@ -1,109 +1,119 @@
-import Image from "next/image"
+import Image from "next/image";
+import clsx from "clsx";
+
+const pillars = [
+  {
+    id: 1,
+    title: "Medical Supplies",
+    description:
+      "Find the latest in surgical instruments, diagnostic tools, disposables, and hospital-grade medical consumables. The segment brings together leading manufacturers and procurement professionals seeking quality products that meet global standards.",
+    image: "/pillar/pillar1.png",
+    imageLeft: false,
+  },
+  {
+    id: 2,
+    title: "Laboratory Equipment",
+    description:
+      "Focusing on next-generation laboratory solutions, from clinical diagnostics to research-based technologies. The pillar is specifically curated for labs, hospitals, and research institutions looking for precision-driven equipment like PCR machines, imaging systems, and biosafety systems.",
+    image: "/pillar/pillar2.png",
+    imageLeft: true,
+  },
+  {
+    id: 3,
+    title: "Medical Tourism",
+    description:
+      "A dedicated platform for hospitals, wellness resorts, and facilitators to promote cross-border healthcare services. Position your brand in front of international patients, medical travel agencies, and health tour operators.",
+    image: "/pillar/pillar3.png",
+    imageLeft: false,
+  },
+  {
+    id: 4,
+    title: "Digital Health",
+    description:
+      "Discover how digital transformation is revolutionizing healthcare delivery across Asia. Explore cutting-edge solutions including AI in healthcare, telemedicine platforms, remote monitoring devices, health apps, wearable tech, and IT solutions for hospitals and clinics.",
+    image: "/pillar/pillar4.png",
+    imageLeft: true,
+  },
+  {
+    id: 5,
+    title: "Elderly Care",
+    description:
+      "Addressing an aging population, this wellness and elderly care healthcare segment focuses on senior care infrastructure. This segment features assisted living products, mobility aids, nursing technologies, and care home management solutions essential for caregivers, policy planners, and wellness investors.",
+    image: "/pillar/pillar5.png",
+    imageLeft: false,
+  },
+];
+function Pillar({
+  id,
+  title,
+  description,
+  image,
+  imageLeft,
+}: typeof pillars[number]) {
+  return (
+    <div
+      className={clsx(
+        "rounded-none overflow-hidden bg-cover bg-no-repeat",
+        imageLeft
+          ? "bg-[url(/pillar/greenBgRight.png)]"
+          : "bg-[url(/pillar/greenBgLeft.png)]"
+      )}
+    >
+      <div
+        className={clsx(
+          "flex flex-col md:flex-row items-center justify-between  gap-6 ",
+          imageLeft ? "md:flex-row-reverse text-white" : "text-stone-900"
+        )}
+      >
+        {/* TEXT */}
+        <div className="flex-1 p-8 md:p-20">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            {`${id}. ${title}`}
+          </h3>
+          <p className="text-sm md:text-base leading-relaxed">{description}</p>
+        </div>
+
+        {/* IMAGE */}
+        <div className=" shrink-0 rounded-tl-[60px] rounded-tr-[60px] overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            width={600}
+            height={400}
+            className="object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
 
 export default function PillarsSection() {
   return (
     <section className="py-6 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-stone-900 mb-4">
-            The 5 Pillars Of <span className="text-[#3EAEC2]">Asia Health-5 2025</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
+            The 5 Pillars Of{" "}
+            <span className="text-[#3EAEC2]">Asia Health-5 2025</span>
           </h2>
           <p className="text-gray-600 max-w-4xl mx-auto text-sm leading-relaxed">
-           <span className="text-[#3EAEC2]"> Health-5</span> 2025 Is A Sector-Focused Platform That Unites Five High-Growth Verticals Of The Healthcare And
-            Wellness Industry. Each Pillar Represents A Thriving Market Opportunity And Is Curated To Showcase
-            Innovation, Investment Potential, And Business-Ready Solutions.
+            <span className="text-[#3EAEC2]">Health-5</span> 2025 is a
+            sector-focused platform that unites five high-growth verticals of
+            the healthcare and wellness industry. Each pillar represents a
+            thriving market opportunity and is curated to showcase innovation,
+            investment potential, and business-ready solutions.
           </p>
         </div>
 
         <div className="space-y-8">
-          {/* Pillar 1 - Medical Supplies */}
-          <div className="bg-[#19F0F5] rounded-lg overflow-hidden">
-            <div className="grid lg:grid-cols-2">
-              <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-stone-900 mb-4">1. Medical Supplies</h3>
-                <p className="text-stone-900 text-sm leading-relaxed">
-                  Find The Latest In Surgical Instruments, Diagnostic Tools, Disposables, And Hospital-Grade Medical
-                  Consumables. The Segment Brings Together Leading Manufacturers And Procurement Professionals Seeking
-                  Quality Products That Meet Global Standards.
-                </p>
-              </div>
-<div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
-  <Image src="/pillar/pillar1.png" alt="Medical Supplies" fill className="object-cover" />
-</div>
-
-            </div>
-          </div>
-
-          {/* Pillar 2 - Laboratory Equipment */}
-          <div className="bg-[#0D9B9D] rounded-lg overflow-hidden">
-            <div className="grid lg:grid-cols-2">
-              <div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
-                <Image src="/pillar/pillar2.png" alt="Laboratory Equipment" fill className="object-cover" />
-              </div>
-              <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-white mb-4">2. Laboratory Equipment</h3>
-                <p className="text-white text-sm leading-relaxed">
-                  Focusing On Next-Generation Laboratory Solutions, From Clinical Diagnostics To Research-Based
-                  Technologies. The Pillar Is Specifically Curated For Labs, Hospitals, And Research Institutions
-                  Looking For Precision-Driven Equipment Like PCR Machines, Imaging Systems, And Biosafety Systems.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Pillar 3 - Medical Tourism */}
-          <div className="bg-[#19F0F5] rounded-lg overflow-hidden">
-            <div className="grid lg:grid-cols-2">
-              <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-stone-900 mb-4">3. Medical Tourism</h3>
-                <p className="text-stone-900 text-sm leading-relaxed">
-                  A Dedicated Platform For Hospitals, Wellness Resorts, And Facilitators To Promote Cross-Border
-                  Healthcare Services. Position Your Brand In Front Of International Patients, Medical Travel Agencies,
-                  And Health Tour Operators.
-                </p>
-              </div>
-              <div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
-                <Image src="/pillar/pillar3.png" alt="Medical Tourism" fill className="object-cover" />
-              </div>
-            </div>
-          </div>
-
-          {/* Pillar 4 - Digital Health */}
-          <div className="bg-[#0D9B9D] rounded-lg overflow-hidden">
-            <div className="grid lg:grid-cols-2">
-              <div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
-                <Image src="/pillar/pillar4.png" alt="Digital Health" fill className="object-cover" />
-              </div>
-              <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-white mb-4">4. Digital Health</h3>
-                <p className="text-white text-sm leading-relaxed">
-                  Discover How Digital Transformation Is Revolutionizing Healthcare Delivery Across Asia. Explore
-                  Cutting-Edge Solutions Including AI In Healthcare, Telemedicine Platforms, Remote Monitoring Devices,
-                  Health Apps, Wearable Tech, And IT Solutions For Hospitals And Clinics.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Pillar 5 - Elderly Care */}
-          <div className="bg-[#19F0F5] rounded-lg overflow-hidden">
-            <div className="grid lg:grid-cols-2">
-              <div className="p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-stone-900 mb-4">5. Elderly Care</h3>
-                <p className="text-stone-900 text-sm leading-relaxed">
-                  Addressing An Aging Population, This Wellness And Elderly Care Healthcare Segment Focuses On Senior
-                  Care Infrastructure. This Segment Features Assisted Living Products, Mobility Aids, Nursing
-                  Technologies, And Care Home Management Solutions Essential For Caregivers, Policy Planners, And
-                  Wellness Investors.
-                </p>
-              </div>
-              <div className="relative min-h-[250px] rounded-tl-[60px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
-                <Image src="/pillar/pillar5.png" alt="Elderly Care" fill className="object-cover" />
-              </div>
-            </div>
-          </div>
+          {pillars.map((pillar) => (
+            <Pillar key={pillar.id} {...pillar} />
+          ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
