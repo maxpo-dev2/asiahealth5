@@ -110,6 +110,12 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+.stroke-text {
+  -webkit-text-stroke: 1.5px black;
+  color: transparent;
+  font-weight: 800;
+}
+
 
 @layer base {
   * {
