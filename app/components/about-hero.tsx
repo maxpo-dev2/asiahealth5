@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import CommonGrad from "@/app/components/commpn-grad";
+import CommonGrad from "@/app/components/common-grad";
 
 export default function AboutHero() {
   return (

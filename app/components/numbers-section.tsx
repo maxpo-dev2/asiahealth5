@@ -29,7 +29,7 @@ export default function NumbersSection() {
         </div>
 
         {/* Overview */}
-        <div className="text-center mx-auto py-16">
+        <div className="text-center mx-auto pt-16">
           <h3 className="text-xl sm:text-2xl md:text-5xl font-semibold text-stone-900 mb-4">
             Overview Of The Malaysian Healthcare Market
           </h3>

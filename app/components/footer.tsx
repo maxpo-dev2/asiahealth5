@@ -22,15 +22,6 @@ export default function Footer() {
             <div className="text-sm text-gray-300 mb-4">
               WTC, Kuala Lumpur, Malaysia
             </div>
-            <div className="text-sm text-gray-300 mb-2 font-semibold">
-              Contact Us
-            </div>
-            <div className="text-sm text-gray-300 mb-1">
-              info@asiahealth5.com
-            </div>
-            <div className="text-sm text-gray-300">
-              +91 9363106848 | +91 9361705548
-            </div>
           </div>
 
           {/* Event Information */}
@@ -82,7 +73,7 @@ export default function Footer() {
             {/* Contact Info */}
             <div>
               <div className="font-semibold mb-1">Contact Us</div>
-              <div>info@asiahealth5.com</div>
+              <div>info@asiahealthfive.com</div>
               <div>+971 509431529 | +91 9363106848</div>
             </div>
 

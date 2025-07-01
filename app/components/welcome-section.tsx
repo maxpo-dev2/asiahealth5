@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CircleArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function WelcomeSection() {
   return (
@@ -29,8 +30,16 @@ export default function WelcomeSection() {
             </Button>
           </div>
 
-          {/* Right Placeholder Block */}
-          <div className="bg-cyan-400 h-90 w-full rounded-none shadow-md " />
+          <div className="w-full">
+            <Image
+              src="/home/landingBanner.png"
+              alt="Overlay"
+              width={837}
+              height={647}
+              className="w-full h-auto max-w-full shadow-md"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -55,14 +55,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 bg-neutral-900 shadow-md  z-50 overflow-visible  ">
       {/* Overlapping Logo */}
-      <div className="absolute top-0 left-0 md:left-40 z-50 h-full w-1/3 md:w-auto">
-        <div className="bg-white w-" style={{ borderRadius: "50px 0px 50px 0px" }}>
+      <div className="absolute top-0 left-0 md:left-auto xl:left-20 z-50 h-full w-1/3 md:w-auto ">
+        <div className="bg-white" style={{ borderRadius: "50px 0px 50px 0px" }}>
           <Image
             src="/logo/healthlogo.png" // Change to your actual path
             alt="Asia Health Logo"
             width={320}
             height={70}
-            
             className="object-contain p-5 md:px-10 md:pb-2 md:pt-7"
           />
         </div>
@@ -70,14 +69,16 @@ export default function Header() {
 
       {/* Top bar with button */}
       <div className="container mx-auto px-4 py-4 flex justify-end">
-        <Button className="text-sm font-semibold bg-transparent hover:bg-cyan-500 text-cyan-400 border-2 border-cyan-400 rounded-none">
-          REGISTER NOW
-        </Button>
+        <Link href="/register">
+          <Button className="relative cursor-pointer z-10 border-2 text-cyan-400  border-cyan-400 bg-transparent px-4 sm:px-6 py-2 font-semibold rounded-none text-xs sm:text-sm transition-all duration-700 ease-out before:absolute before:inset-0 before:-z-10 before:transition-all before:duration-700 before:opacity-0 hover:before:opacity-100 hover:before:shadow-[0_0_40px_10px_rgba(13,182,201,0.5)]">
+            REGISTER NOW
+          </Button>
+        </Link>
       </div>
 
       {/* Navigation */}
       <nav className="  bg-[linear-gradient(to_right,_#00FCFF_0%,_#3EAEC2_100%)]">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-center">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-center md:justify-end ">
           {/* Mobile Menu Toggle */}
           <div className="md:hidden z-30 ml-auto">
             <button
@@ -92,14 +93,14 @@ export default function Header() {
           <div
             className={`${
               isMobileMenuOpen ? "block" : "hidden"
-            } absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:flex flex-col md:flex-row gap-4 md:gap-8 items-start md:items-center px-4 md:px-0 py-4 md:py-0`}
+            } absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:flex flex-col md:flex-row gap-4 md:gap-6 items-start md:items-center px-4 md:px-0 py-4 md:py-0`}
           >
             {navBarContents.map(({ title, link, subLinks }) =>
               subLinks ? (
                 <div key={title} className="relative group">
                   <button
                     onClick={() => toggleDropdown(title)}
-                    className="flex items-center gap-1 py-1 text-black cursor-pointer hover:text-white font-semibold text-sm md:text-base"
+                    className="animated-link flex items-center gap-1 py-1 text-black cursor-pointer hover:text-white font-semibold text-sm md:text-base"
                   >
                     {title}
                     <ChevronDown
@@ -133,7 +134,7 @@ export default function Header() {
                   key={title}
                   href={link}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-black block md:inline-block py-1 font-semibold text-sm md:text-base hover:text-white"
+                  className="animated-link text-black block md:inline-block py-1 font-semibold text-sm md:text-base hover:text-white"
                 >
                   {title}
                 </Link>
