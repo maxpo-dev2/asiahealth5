@@ -44,7 +44,6 @@ const pillars = [
   },
 ];
 function Pillar({
-  id,
   title,
   description,
   image,
