@@ -126,3 +126,23 @@
     @apply font-sans bg-background text-foreground;
   }
 }
+
+.animated-link {
+  @apply relative transition-colors duration-300 text-black hover:text-white;
+}
+
+.animated-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.animated-link:hover::before {
+  width: 100%;
+  left: 0;
+}

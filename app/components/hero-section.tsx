@@ -5,9 +5,12 @@ export default function HeroSection() {
     <section className="relative bg-white">
       {/* Hero Background Image */}
       <div
-        className="relative h-[700px] md:h-[800px] bg-cover bg-center bg-no-repeat z-0"
-        style={{ backgroundImage: "url('/home/herosec.jpg')" }}
+        className="relative h-[700px] md:h-[800px] bg-cover bg-center bg-no-repeat z-0 "
+        style={{ backgroundImage: "url('/home/heroBanner.png')" }}
       >
+      <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80 z-0"></div>
+
+
         {/* Overlay Content - Positioned at Bottom */}
         <div className="absolute bottom-20 left-0 right-0 w-full z-10">
           <div className="container mx-auto px-4 text-center text-white  pb-10">

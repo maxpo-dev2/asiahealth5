@@ -39,9 +39,9 @@ export default function WhoShouldAttend() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="mb-10 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#1E1E1E] leading-tight">
+          <h2 className="text-3xl md:text-5xl  text-[#1E1E1E] leading-tight">
             Who Should <br />
-            <span className="text-[#3EAEC2]">Attend?</span>
+            <span className="text-4xl md:text-8xl font-bold text-[#3EAEC2]">Attend?</span>
           </h2>
         </div>
 
@@ -64,11 +64,11 @@ export default function WhoShouldAttend() {
           
 
               {/* Label */}
-              <div className="absolute bottom-4 left-4 right-4">
-                  <span className="text-black text-4xl md:text-5xl font-bold text-outline outline-white  ">
+              <div className="absolute top-9/12 bottom-2 left-4 right-4 ">
+                  <span className="stroke-text stroke-2 text-6xl md:text-8xl font-extrabold ">
                   {item.number}
                 </span>
-                <p className="text-white text-sm md:text-base font-medium leading-tight">
+                <p className="text-white text-sm md:text-2xl font-medium leading-tight">
                   {item.label}
                 </p>
               </div>
