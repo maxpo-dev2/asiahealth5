@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BgWithBlueGradient from "./common/bgWithBlueGradient";
 
 const features = [
   {
@@ -26,7 +27,8 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-10 md:py-16 bg-[url(/overview/blackBg.png)] bg-cover bg-no-repeat  bg-stone-900">
+    <BgWithBlueGradient>
+    {/* <section className="py-10 md:py-16 bg-[url(/overview/blackBg.png)] bg-cover bg-no-repeat  bg-stone-900"> */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((item, index) => (
@@ -61,6 +63,7 @@ export default function FeaturesSection() {
           </p>
         </div>
       </div>
-    </section>
+    {/* </section> */}
+    </BgWithBlueGradient>
   );
 }

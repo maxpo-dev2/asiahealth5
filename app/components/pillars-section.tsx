@@ -44,7 +44,6 @@ const pillars = [
   },
 ];
 function Pillar({
-  id,
   title,
   description,
   image,
@@ -68,7 +67,7 @@ function Pillar({
         {/* TEXT */}
         <div className="flex-1 p-8 md:p-20">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            {`${id}. ${title}`}
+           {title}
           </h3>
           <p className="text-sm md:text-base leading-relaxed">{description}</p>
         </div>
