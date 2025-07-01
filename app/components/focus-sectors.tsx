@@ -11,13 +11,13 @@ export default function FocusSectors() {
         </h2>
 
         {/* Top Row - 2 Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-15 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-15 p-3">
           <Card src="/focus/foc1.png" label="Medical Supplies" />
           <Card src="/focus/foc2.png" label="Laboratory Equipment" />
         </div>
 
         {/* Bottom Row - 3 Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-5">
           <Card src="/focus/foc3.png" label="Medical Tourism" />
           <Card src="/focus/foc4.png" label="Digital Health" />
           <Card src="/focus/foc5.png" label="Elderly Care" />
@@ -29,7 +29,7 @@ export default function FocusSectors() {
 
 function Card({ src, label }: { src: string; label: string }) {
   return (
-    <div className="relative h-60 md:h-120 rounded-4xl overflow-hidden ">
+    <div className="relative h-100 md:h-120 rounded-4xl overflow-hidden ">
       <Image
         src={src}
         alt={label}

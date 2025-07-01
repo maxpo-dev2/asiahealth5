@@ -1,63 +1,66 @@
-import Image from "next/image"
+import Image from "next/image";
+
+const features = [
+  {
+    image: "/overview/overview1.png",
+    title: "Ranked Among The Top Medical Tourism Destinations Globally",
+    rounded: "rounded-tr-[60px]",
+  },
+  {
+    image: "/overview/overview2.png",
+    title: "Strong Public-Private Healthcare Infrastructure",
+    rounded: "rounded-tl-[60px]",
+  },
+  {
+    image: "/overview/overview3.png",
+    title: "Surge In Digital Health Adoption And Elderly Care Demand",
+    rounded: "rounded-tr-[60px]",
+  },
+  {
+    image: "/overview/overview4.png",
+    title:
+      "Thriving Market For Medical Devices, Lab Equipment, And Pharmaceuticals",
+    rounded: "rounded-tl-[60px]",
+  },
+];
 
 export default function FeaturesSection() {
   return (
-    <section className="py-6 md:py-16 bg-gray-900">
+    <section className="py-10 md:py-16 bg-[url(/overview/blackBg.png)] bg-cover bg-no-repeat  bg-stone-900">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-gray-900 rounded-lg overflow-hidden relative h-64">
-            <div className="absolute inset-0 rounded-tl-[0px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
-              <Image src="/overview/overview1.png" alt="Medical Tourism" fill className="object-cover" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {features.map((item, index) => (
+            <div
+              key={index}
+              className=" overflow-hidden relative h-80 group"
+            >
+              <div
+                className={`absolute inset-0 overflow-hidden ${item.rounded}`}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-cyan-400 to-transparent p-4 md:pt-30">
+                <h3 className=" text-neutral-800 text-sm sm:text-base md:text-2xl font-medium leading-snug">
+                  {item.title}
+                </h3>
+              </div>
             </div>
-         <div className="absolute bottom-0 left-0 right-0 bg-[#19F0F5]/90 p-4">
-
-              <h3 className="font-bold text-gray-900 text-sm leading-tight">
-                Ranked Among The Top Medical Tourism Destinations Globally
-              </h3>
-            </div>
-          </div>
-
-          <div className="bg-gray-900 rounded-lg overflow-hidden relative h-64">
-            <div className="absolute inset-0 rounded-tl-[60px] rounded-tr-[0px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
-              <Image src="/overview/overview2.png" alt="Healthcare Infrastructure" fill className="object-cover" />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-[#19F0F5]/90 p-4">
-              <h3 className="font-bold text-gray-900 text-sm leading-tight">
-                Strong Public-Private Healthcare Infrastructure &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-              </h3>
-            </div>
-          </div>
-
-          <div className="bg-gray-900 rounded-lg overflow-hidden relative h-64">
-            <div className="absolute inset-0 rounded-tl-[0px] rounded-tr-[60px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden">
-              <Image src="/overview/overview3.png" alt="Digital Health" fill className="object-cover" />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-[#19F0F5]/90 p-4">
-              <h3 className="font-bold text-gray-900 text-sm leading-tight">
-                Surge In Digital Health Adoption And Elderly Care Demand
-              </h3>
-            </div>
-          </div>
-
-          <div className="bg-gray-900 rounded-lg overflow-hidden relative h-64">
-            <div className="absolute inset-0 rounded-tl-[60px] rounded-tr-[0px] rounded-br-[0px] rounded-bl-[0px] overflow-hidden ">
-              <Image src="/overview/overview4.png" alt="Medical Devices" fill className="object-cover" />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-[#19F0F5]/90 p-4">
-              <h3 className="font-bold text-gray-900 text-sm leading-tight">
-                Thriving Market For Medical Devices, Lab Equipment, And Pharmaceuticals
-              </h3>
-            </div>
-          </div>
+          ))}
         </div>
 
-        <div className="text-center mt-8">
-          <p className="text-white text-sm max-w-4xl mx-auto">
-            <span className="font-semibold text-[#3EAEC2]">Asia Health-5</span> 2025 Provides An Exceptional Platform To Connect With
-            Buyers, Partners, And Government Stakeholders In This Thriving Market.
+        <div className="text-center mt-10 px-4">
+          <p className="text-white text-sm sm:text-base md:text-2xl max-w-8xl mx-auto leading-relaxed">
+            <span className="font-semibold text-teal-400">Asia Health-5</span>{" "}
+            2025 provides an exceptional platform to connect with buyers,
+            partners, and government stakeholders in this thriving market.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
