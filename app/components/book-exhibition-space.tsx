@@ -20,19 +20,19 @@ export default function BookExhibitionSpace() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
-            <Button size="lg" className="bg-cyan-400 hover:bg-cyan-500 text-white px-8 py-3 font-semibold">
+            <Button size="lg" className="bg-[#3EAEC2] hover:bg-cyan-500 text-white px-8 py-3 font-semibold rounded-none">
               Book Now
             </Button>
 
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-3 font-semibold bg-transparent"
+              className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-3 font-semibold bg-transparent rounded-none"
             >
               Download Floor Plan
             </Button>
 
-            <Button size="lg" className="bg-cyan-400 hover:bg-cyan-500 text-white px-8 py-3 font-semibold">
+            <Button size="lg" className="bg-[#3EAEC2] hover:bg-cyan-500 text-white px-8 py-3 font-semibold rounded-none">
               Sponsorship Opportunities
             </Button>
           </div>
