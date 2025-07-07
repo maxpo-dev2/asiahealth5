@@ -50,13 +50,13 @@ export default function WhoShouldAttend() {
           {attendees.map((item, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-lg aspect-[3/4]"
+              className="relative overflow-hidden rounded-none aspect-[3/4]"
             >
               <Image
                 src={item.image}
                 alt={item.label}
                 fill
-                className="object-cover"
+                className="object-cover rounded-none"
               />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#3EAEC2]/70 via-transparent to-transparent" />

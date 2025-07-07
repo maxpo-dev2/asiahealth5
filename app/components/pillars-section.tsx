@@ -94,12 +94,12 @@ export default function PillarsSection() {
     <section className="py-6 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-stone-900 mb-4">
             The 5 Pillars Of{" "}
             <span className="text-[#3EAEC2]">Asia Health-5 2025</span>
           </h2>
           <p className="text-gray-600 max-w-4xl mx-auto text-sm leading-relaxed">
-            <span className="text-[#3EAEC2]">Health-5</span> 2025 is a
+            <span className="text-[#3EAEC2] font-bold">Health-5 2025</span>  is a
             sector-focused platform that unites five high-growth verticals of
             the healthcare and wellness industry. Each pillar represents a
             thriving market opportunity and is curated to showcase innovation,

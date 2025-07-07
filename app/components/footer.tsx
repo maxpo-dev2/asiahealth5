@@ -4,7 +4,7 @@ import { X, Instagram, Linkedin,Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-12">
+    <footer className="bg-[#242424] text-white pt-12">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-300">
               <li><a href="#" className="hover:text-cyan-400">Visitor Registration</a></li>
               <li><a href="#" className="hover:text-cyan-400">Delegate Pass</a></li>
-              <li><a href="#" className="hover:text-cyan-400">Book Brochure</a></li>
+              <li><a href="#" className="hover:text-cyan-400">Request Brochure</a></li>
             </ul>
           </div>
 
@@ -60,8 +60,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Media & Content</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="#" className="hover:text-cyan-400">Press Release</a></li>
+              <li><a href="#" className="hover:text-cyan-400">News & Blogs</a></li>
               <li><a href="#" className="hover:text-cyan-400">Market Outlook</a></li>
+               <li><a href="#" className="hover:text-cyan-400">FAQs</a></li>
               <li><a href="#" className="hover:text-cyan-400">Testimonials</a></li>
             </ul>
           </div>
@@ -114,8 +115,8 @@ export default function Footer() {
 
           {/* Footer Bottom */}
           <div className="text-center text-xs text-gray-400 pb-4">
-            <a href="#" className="hover:text-cyan-400 mr-4">Terms & Conditions</a>
-            <a href="#" className="hover:text-cyan-400">Privacy Policy</a>
+            <a href="/terms" className="hover:text-cyan-400 mr-4">Terms & Conditions</a>
+            <a href="/privacy" className="hover:text-cyan-400">Privacy Policy</a>
           </div>
         </div>
       </div>

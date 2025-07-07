@@ -57,7 +57,7 @@ export default function FeaturesSection() {
 
         <div className="text-center mt-10 px-4">
           <p className="text-white text-sm sm:text-base md:text-2xl max-w-8xl mx-auto leading-relaxed">
-            <span className="font-semibold text-teal-400">Asia Health-5</span>{" "}
+            <span className="font-semibold text-[#3EAEC2]">Asia Health-5</span>{" "}
             2025 provides an exceptional platform to connect with buyers,
             partners, and government stakeholders in this thriving market.
           </p>

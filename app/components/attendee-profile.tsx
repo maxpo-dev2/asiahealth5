@@ -77,7 +77,7 @@ export default function AttendeeProfile() {
         {/* Cards */}
         <div className="grid grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
           {attendeeTypes.map((attendee) => (
-            <div key={attendee.id} className="relative overflow-hidden rounded-lg aspect-[4/5] group shadow-lg">
+            <div key={attendee.id} className="relative overflow-hidden rounded-none aspect-[4/5] group shadow-lg">
               <Image src={attendee.image || "/placeholder.svg"} alt={attendee.title} fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/90 via-cyan-400/30 to-transparent"></div>
         <div className="absolute bottom-16 left-4">
