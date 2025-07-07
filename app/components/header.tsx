@@ -32,7 +32,7 @@ const navBarContents = [
   {
     title: "More",
     link: "/more",
-    subLinks: [{ label: "FAQs", link: "/more/faqs" }],
+    subLinks: [{ label: "FAQs", link: "/faq" }],
   },
 ];
 
@@ -57,13 +57,17 @@ export default function Header() {
       {/* Overlapping Logo */}
       <div className="absolute top-0 left-0 md:left-auto xl:left-20 z-50 h-full w-1/3 md:w-auto ">
         <div className="bg-white" style={{ borderRadius: "50px 0px 50px 0px" }}>
-          <Image
+          <Link href={"/"}>
+                    <Image
             src="/logo/healthlogo.png" // Change to your actual path
             alt="Asia Health Logo"
             width={320}
             height={70}
             className="object-contain p-5 md:px-10 md:pb-2 md:pt-7"
           />
+          
+          </Link>
+
         </div>
       </div>
 
