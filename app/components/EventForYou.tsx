@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function EventForYou() {
   return (
-    <section className="py-16 bg-gray-900">
+    <section className="py-16 ">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

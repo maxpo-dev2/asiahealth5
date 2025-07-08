@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { CircleArrowRight } from "lucide-react";
-import Image from "next/image";
+// import { CircleArrowRight, Video } from "lucide-react";
+import { CircleArrowRight } from "lucide-react"; 
+import Video from "@/app/components/ui/video";
+
+
 
 export default function WelcomeSection() {
   return (
@@ -31,15 +34,15 @@ export default function WelcomeSection() {
           </div>
 
           <div className="w-full">
-            <Image
-              src="/home/landingBanner.png"
-              alt="Overlay"
-              width={837}
-              height={647}
-              className="w-full h-auto max-w-full shadow-md"
-              priority
-            />
-          </div>
+ <Video
+  src="/video/video.mp4"
+
+  
+  className="w-full h-full object-cover"
+  />
+
+</div>
+
         </div>
       </div>
     </section>
