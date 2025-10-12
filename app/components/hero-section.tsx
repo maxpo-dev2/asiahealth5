@@ -40,7 +40,7 @@ export default function HeroSection() {
               <div>
                 <div className="text-xl md:text-2xl">When :</div>
                 <div className="text-2xl md:text-3xl font-semibold">
-                  December 2–4, 2025
+                  April 14–16, 2026
                 </div>
               </div>
               <div className="md:text-right">
